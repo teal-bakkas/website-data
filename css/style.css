@@ -350,7 +350,6 @@ CONTACT
 #contact h3 {
     color: var(--white);
     font-size: 1.5rem;
-    margin-top: 1rem;
     margin-bottom: .5rem;
 }
 #contact .contact-wrapper {
@@ -358,6 +357,10 @@ CONTACT
     flex-wrap: wrap;
     justify-content: space-around;
     margin-bottom: 2rem;
+}
+#contact .contact-box {
+    margin-right: 1rem;
+    margin-left: 1rem;
 }
 
 /*
