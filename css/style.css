@@ -87,6 +87,13 @@ h3,
     display: block;
     margin: 0 auto 2em;
     max-width: 100%;
+    border-radius: 16px;
+    box-shadow: 10px 8px 0px var(--white_a);
+}
+
+.twitter-timeline {
+   border-radius: 16px;
+   box-shadow: 10px 8px 0px var(--white_a)
 }
 
 /*
@@ -251,6 +258,7 @@ MEMBERS
 }
 .members-text {
     padding: 1rem;
+    border-radius: 16px;
 }
 #members h2 {
   background: linear-gradient(var(--light-blue), var(--blue));
@@ -342,11 +350,13 @@ CONTACT
 #contact h3 {
     color: var(--white);
     font-size: 1.5rem;
+    margin-top: 1rem;
     margin-bottom: .5rem;
 }
 #contact .contact-wrapper {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
     margin-bottom: 2rem;
 }
 
