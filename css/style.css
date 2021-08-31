@@ -14,14 +14,22 @@ COLORS
     --green: #00a2af;
     --grey: #333;
     --white: #fff;
+    --white_a: rgba(255, 255, 255, 0.5);
     --background: #fffeee;
 
     /*bakkas color*/
-    --teal: rgb(50, 118, 204); /*てある*/
-    --00kn3: rgb(100, 230, 110);
     --chapin: rgb(165, 115, 235);
     --toto: rgb(245, 175, 230);
     --nebugi: rgb(255, 200, 0);
+    --00kn3: rgb(100, 230, 110);
+    --teal: rgb(50, 118, 204);
+
+    /*bakkas color of translucent*/
+    --chapin_a: rgb(165, 115, 235, 0.2);
+    --toto_a: rgb(245, 175, 230, 0.2);
+    --nebugi_a: rgb(255, 200, 0, 0.2);
+    --00kn3_a: rgb(100, 230, 110, 0.2);
+    --teal_a: rgb(50, 118, 204, 0.2);
 }
 
 /*
@@ -99,6 +107,9 @@ header a {
     color: var(--white);
     font-size: 1.5rem;
 }
+.logo {
+    width: 3.5rem;
+}
 .btn-menu {
     position: absolute;
     top: 12px;
@@ -126,11 +137,6 @@ header a {
 }
 .main-nav.open-menu {
     width: 100%;
-}
-
-/*add*/
-header .logo {
-    width: 50px;
 }
 
 /*
@@ -244,7 +250,7 @@ MEMBERS
     margin-bottom: 2rem;
 }
 .members-text {
-    margin-left: 1rem;
+    padding: 1rem;
 }
 #members h2 {
   background: linear-gradient(var(--light-blue), var(--blue));
@@ -256,7 +262,66 @@ MEMBERS
 #members h3 {
     font-size: 1.5rem;
     margin-bottom: .5rem;
+    text-shadow: 1px 1px 2px var(--white);
+    font-weight: bold;
 }
+
+/*member's color*/
+.underline {
+    background: linear-gradient(transparent 50%, var(--white) 50%);
+}
+#chapin {
+    background: linear-gradient(290deg, var(--white), 30%, var(--chapin_a));
+    box-shadow: 10px 8px 0px var(--chapin);
+}
+#chapin h3 {
+    color: var(--chapin);
+}
+#chapin-underline {
+    background: linear-gradient(transparent 50%, var(--chapin_a) 50%);
+}
+#toto {
+    background: linear-gradient(290deg, var(--white), 45%, var(--toto_a));
+    box-shadow: 10px 8px 0px var(--toto);
+}
+#toto h3{
+    color: var(--toto);
+}
+#toto-underline {
+    background: linear-gradient(transparent 50%, var(--white) 50%);
+}
+#nebugi {
+    background: linear-gradient(290deg, var(--white), 15%, var(--nebugi_a));
+    box-shadow: 10px 8px 0px var(--nebugi);
+}
+#nebugi h3{
+    color: var(--nebugi);
+}
+#nebugi-underline {
+    background: linear-gradient(transparent 50%, var(--white) 50%);
+}
+#OOkn3 {
+    background: linear-gradient(290deg, var(--white), 15%, var(--00kn3_a));
+    box-shadow: 10px 8px 0px var(--00kn3);
+}
+#OOkn3 h3{
+    color: var(--00kn3);
+}
+#OOkn3-underline {
+    background: linear-gradient(transparent 50%, var(--white) 50%);
+}
+#teal {
+    background: linear-gradient(290deg, var(--white), 20%, var(--teal_a));
+    box-shadow: 10px 8px 0px var(--teal);
+}
+#teal h3{
+    color: var(--teal);
+}
+#teal-underline {
+    background: linear-gradient(transparent 50%, var(--teal_a) 50%);
+}
+
+
 #members img {
     border-radius: 50%;
     width: 20%;
