@@ -96,6 +96,10 @@ h3,
    box-shadow: 10px 8px 0px var(--white_a)
 }
 
+.fas {
+    font-size: 0.8rem;
+}
+
 /*
 HEADER
 ================================================ */
